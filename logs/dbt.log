@@ -1,0 +1,30 @@
+[0m17:31:28.746941 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105eef910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106e86e60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106e87dc0>]}
+
+
+============================== 17:31:28.749651 | a41111e4-d478-4085-887b-ce8d79565cd5 ==============================
+[0m17:31:28.749651 [info ] [MainThread]: Running with dbt=1.9.6
+[0m17:31:28.749962 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/U.M/.dbt', 'debug': 'False', 'warn_error': 'None', 'log_path': 'logs', 'fail_fast': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt init netflix', 'introspect': 'True', 'static_parser': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m17:31:28.758789 [debug] [MainThread]: Starter project path: /Users/U.M/netflixdbt/venv/lib/python3.10/site-packages/dbt/include/starter_project
+[0m17:31:28.762001 [info ] [MainThread]: 
+Your new dbt project "netflix" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m17:31:28.762185 [info ] [MainThread]: Setting up your profile.
+[0m17:34:19.062228 [info ] [MainThread]: Profile netflix written to /Users/U.M/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m17:34:19.114030 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 170.40825, "process_in_blocks": "0", "process_kernel_time": 0.160752, "process_mem_max_rss": "96518144", "process_out_blocks": "0", "process_user_time": 0.800014}
+[0m17:34:19.117242 [debug] [MainThread]: Command `dbt init` succeeded at 17:34:19.117007 after 170.41 seconds
+[0m17:34:19.118268 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105eef910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106e85de0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106e864a0>]}
+[0m17:34:19.118890 [debug] [MainThread]: Flushing usage events
+[0m17:34:19.571078 [debug] [MainThread]: An error was encountered while trying to flush usage events
