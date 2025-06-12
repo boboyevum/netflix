@@ -1,0 +1,48 @@
+models:
+  - name: dim_movies
+    description: Dim table for cleaned movie metadata
+    columns:
+      - name: movie_id
+        description: PK of the table
+        tests:
+          - not_null
+      - name: movie_title
+        descripition: movie title
+        tests:
+           - not_null
+      - name: genre_array
+        description: List of genres in array format
+      - name: genres
+        description: Raw genre from src
+
+  - name: dim_users
+    description: Dim table of unique users from a union of multiple tables
+    columns: 
+      - name: user_id
+        description: Unique user identifier
+        tests:
+          - not_null
+
+  - name: dim_genome_tags
+    description: Dim table of genome tag labels
+    columns: 
+      - name: tag_id
+        description: Unique tag identifier
+        tests:
+          - not_null
+
+  - name: fct_genome_scores
+    description: fct table of relevance scores per movie & tag
+    columns: 
+      - name: movie_id
+        description: FK to dim_movies
+        tests:
+          - not_null
+      - name: tag_id
+        description: FK to dim_genome_tags
+        tests:
+          - not_null
+      - name: relevance_score
+        description: relevance score (0, 1)
+        tests:
+          - not_null
