@@ -1,4 +1,4 @@
-# 🎬 MovieLens Analytics Pipeline with dbt, Snowflake & AWS
+# MovieLens Analytics Pipeline with dbt, Snowflake & AWS
 
 This project is an end-to-end data transformation pipeline using the **MovieLens 20M** dataset. It demonstrates how to build a modern analytics stack using distributed systems and cloud-native tools. 
 
