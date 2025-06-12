@@ -10,7 +10,7 @@ This project is an end-to-end data transformation pipeline using the **MovieLens
 ## 🛠️ Tools & Architecture
 - **Cloud Storage**: AWS S3 for data staging
 - **Data Warehouse**: Snowflake (scalable, columnar cloud data warehouse)
-- **Transformation**: dbt (Data Build Tool) for version-controlled, modular SQL pipelines
+- **Transformation**: dbt (data build tool) for version-controlled, modular SQL pipelines
 
 ## 🧱 Project Structure
 - **Staging Models**: Load raw data and clean basic fields
@@ -27,13 +27,4 @@ This project is an end-to-end data transformation pipeline using the **MovieLens
 - Data lineage visualization with DAG
 - Schema enforcement & test coverage
 - Modular, production-grade data modeling
-
-## 🚀 How to Run
-1. Upload raw data to AWS S3
-2. Ingest into Snowflake using internal stages
-3. Initialize dbt project and run transformations:
-   ```bash
-   dbt run
-   dbt test
-   dbt snapshot
-   dbt docs generate && dbt docs serve
+  
